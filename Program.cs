@@ -1,32 +1,28 @@
-﻿using System;
+﻿//Joseph Matulewicz
 
-// namespace declaration
-namespace HelloWorldApp {
-	
-	// Class declaration
-	class Program {
-		
-		// Main Method
-		static void Main(string[] args) {
+using System;
 
-			Console.WriteLine("****Basic IO ****");
-			GetUserData();
-			Console.ReadLine();
+namespace SimpleConsoleIOapp
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("**** Basic IO ****");
+            GetUserData();
+            Console.WriteLine();
 
-			static void GetUserData()
-			{
-				Console.Write("Enter your name: ");
-				string userName = Console.Readline();
-				Console.Write("Enter your age: ");
-				string userAge = Console.ReadLine();
+            Console.ReadLine();
 
-				//Echo to the console
-				Console.WriteLine("Hello {0}! You are {1} years old.", userName, userAge);
-			}
+            static void GetUserData()
+            {
+                Console.Write("Enter your name: ");
+                string userName = Console.ReadLine();
+                Console.Write("Enter your age: ");
+                string userAge = Console.ReadLine();
 
-		}
-
-	}
-
+                Console.WriteLine("Hello {0}! You are {1} years old.", userName, userAge);
+            }
+        }
+    }
 }
-	
