@@ -12,6 +12,12 @@ namespace HelloWorldApp {
 			// statement
 			// printing Hello World!
 			Console.WriteLine("Hello World!");
+			Console.WriteLine();
+
+            //user input
+			Console.Readline();
+            
+            
 			
 		}
 	}
